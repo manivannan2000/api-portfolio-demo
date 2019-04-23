@@ -41,6 +41,29 @@ curl  http://localhost:8080/api/v1/advisor/ff808081643ddeee01643ddef6a30000/mode
 ```
 
 
+## Dockerize this app 
+
+### Command to build the application based on Dockerfile configuration.
+
+```
+docker build -t mramarajyam/api-portfolio-demo .
+```
+
+
+### Launch the container from mramarajyam/api-portfolio-demo image as follows
+
+```
+docker run -d \
+--name api-portfolio-demo \
+-p 8080:8080 \
+	mramarajyam/api-portfolio-demo
+
+```
+
+
+
+
+
 
 
 
